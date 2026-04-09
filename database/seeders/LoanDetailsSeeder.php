@@ -28,7 +28,7 @@ class LoanDetailsSeeder extends Seeder
                     'book_id' => DB::table('books')->inRandomOrder()->first()->id,
                     'is_return' => $faker->boolean(50), 
                     'created_at' => now(),
-                    'updated_at' => now(), // Tambahkan ini jika di migration ada timestamps()
+                    'updated_at' => now(), 
                 ]);
             }
         }

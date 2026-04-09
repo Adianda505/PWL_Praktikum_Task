@@ -12,10 +12,9 @@ return new class extends Migration
     public function up(): void
     {
     Schema::create('loans', function (Blueprint $table) {
-    $table->id(); // int(20)
+    $table->id(); 
     $table->bigInteger('user_npm');
     $table->foreign('user_npm')->references('npm')->on('users')->onDelete('cascade');
-    
     $table->date('loan_at');
     $table->date('return_at');
     $table->timestamps();

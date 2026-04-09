@@ -9,7 +9,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bookshelfs', function (Blueprint $table) {
-            $table->id(); // int(20) auto-increment
+            $table->id(); 
             $table->string('code', 10);
             $table->string('name', 255);
             $table->timestamps();

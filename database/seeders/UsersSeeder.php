@@ -6,8 +6,8 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Faker\Factory as Faker;
-
 class UsersSeeder extends Seeder
+
 {
     public function run(): void
     {
@@ -20,8 +20,6 @@ class UsersSeeder extends Seeder
             for ($i = 1; $i <= 20; $i++) {
                 $urutan = str_pad($i, 3, '0', STR_PAD_LEFT);
                 
-                // Gunakan string concatenation, biarkan Laravel yang mengurus castingnya ke database
-                // Ini menghindari limitasi integer PHP di beberapa sistem
                 $npm = $jurusan . $year . $urutan;
 
                 $users[] = [

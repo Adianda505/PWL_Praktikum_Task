@@ -20,7 +20,6 @@ class BooksSeeder extends Seeder
                 'publisher'    => $faker->company,
                 'city'         => $faker->city,
                 'cover'        => 'default.jpg',
-                // Pastikan ID bookshelf 1-5 sudah ada di tabel bookshelfs
                 'bookshelf_id' => $faker->numberBetween(1, 5), 
                 'created_at'   => now(),
                 'updated_at'   => now(),

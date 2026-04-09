@@ -15,7 +15,7 @@ class BookshelfsSeeder extends Seeder
 
         for ($i = 1; $i <= 5; $i++) {
             $bookshelfs[] = [
-                'code'       => 'RAK-' . str_pad($i, 2, '0', STR_PAD_LEFT), // Contoh: RAK-01
+                'code'       => 'RAK-' . str_pad($i, 2, '0', STR_PAD_LEFT), 
                 'name'       => 'Lantai ' . $faker->numberBetween(1, 3) . ' Seksi ' . $faker->randomLetter(),
                 'created_at' => now(),
                 'updated_at' => now(),

@@ -14,8 +14,8 @@ return new class extends Migration
     Schema::create('returns', function (Blueprint $table) {
     $table->id(); // int(20)
     $table->foreignId('loan_detail_id')->constrained('loan_detail')->onDelete('cascade');
-    $table->boolean('charge'); // apakah ada denda
-    $table->integer('amount'); // jumlah denda
+    $table->boolean('charge'); 
+    $table->integer('amount'); 
     $table->timestamps();
 });
     }
@@ -26,10 +26,10 @@ return new class extends Migration
     public function down(): void
     {
     Schema::create('returns', function (Blueprint $table) {
-    $table->id(); // int(20)
+    $table->id(); 
     $table->foreignId('loan_detail_id')->constrained('loan_detail')->onDelete('cascade');
-    $table->boolean('charge'); // apakah ada denda
-    $table->integer('amount'); // jumlah denda
+    $table->boolean('charge'); 
+    $table->integer('amount');
     $table->timestamps();
 });
     }
